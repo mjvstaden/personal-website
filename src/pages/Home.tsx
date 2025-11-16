@@ -9,14 +9,14 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-6">
+        <div className="relative z-10 text-center px-4 sm:px-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6">
             Hello, I'm <span className="text-gradient">MJ</span>
           </h1>
-          <p className="text-xl md:text-2xl text-text-secondary mb-6 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-6 max-w-2xl mx-auto">
             Full-stack software engineer from Cape Town
           </p>
-          <p className="text-lg text-text-tertiary mb-12 max-w-3xl mx-auto italic">
+          <p className="text-base sm:text-lg text-text-tertiary mb-12 max-w-3xl mx-auto italic">
             Turning imagination into impact through hard work and user-focused solutions
           </p>
 
