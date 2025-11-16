@@ -9,7 +9,7 @@ import FinalCTA from '../components/sections/FinalCTA';
 
 export default function Home() {
   const { displayText, isComplete } = useTypewriter(
-    'Full-stack software engineer from Cape Town',
+    'A Full-stack software engineer from Cape Town',
     50,
     800
   );
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-4 sm:px-6 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+        <div className="relative z-10 text-center px-4 sm:px-6 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards] -mt-32 sm:-mt-24">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6">
             Hello, I'm <span className="text-gradient">MJ</span>
           </h1>
@@ -57,6 +57,26 @@ export default function Home() {
             >
               Get in Touch
             </a>
+          </div>
+        </div>
+
+        {/* Scroll Down Indicator */}
+        <div className="absolute bottom-24 sm:bottom-20 left-1/2 -translate-x-1/2 opacity-0 animate-[fadeIn_1s_ease-out_4s_forwards]">
+          <div className="flex flex-col items-center gap-2 text-text-tertiary hover:text-accent-primary transition-colors cursor-pointer group">
+            <span className="text-sm font-medium">Scroll to explore</span>
+            <svg
+              className="w-6 h-6 animate-bounce"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
           </div>
         </div>
       </section>
