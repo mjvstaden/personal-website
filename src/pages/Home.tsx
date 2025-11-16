@@ -41,7 +41,7 @@ export default function Home() {
             {!isComplete && <span className="animate-pulse">|</span>}
           </p>
           <p className="text-sm sm:text-lg text-text-tertiary mb-8 sm:mb-12 max-w-3xl mx-auto italic opacity-0 animate-[fadeIn_1s_ease-out_2.5s_forwards]">
-            Turning imagination into impact through hard work and user-focused solutions
+            Turning imagination into impact through hard work and purpose-driven code
           </p>
 
           {/* CTA Buttons */}

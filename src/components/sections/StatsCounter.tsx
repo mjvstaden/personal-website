@@ -68,7 +68,7 @@ export default function StatsCounter() {
     <section id="stats-section" ref={sectionRef} className="py-6 sm:py-16 md:py-20 px-4 sm:px-6 bg-background-secondary/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-6 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gradient">
             By the Numbers
           </h2>
         </div>

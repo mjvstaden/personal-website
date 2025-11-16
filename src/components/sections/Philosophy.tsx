@@ -28,8 +28,8 @@ const values: Value[] = [
     color: 'tertiary',
   },
   {
-    icon: '✨',
-    title: 'Experience Matters',
+    icon: '🎨',
+    title: 'User Experience Matters',
     description: 'Every detail counts - from performance to design to how intuitive it feels.',
     color: 'primary',
   },

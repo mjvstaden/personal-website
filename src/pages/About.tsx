@@ -16,7 +16,7 @@ export default function About() {
         </div>
 
         {/* Experience Timeline */}
-        <section className="mb-12 sm:mb-16">
+        <section id="experience" className="mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-text-primary">Experience</h2>
 
           {/* Finstock */}

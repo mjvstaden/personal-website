@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface Project {
   title: string;
@@ -91,6 +92,17 @@ export default function Projects() {
             <p className="text-text-secondary text-lg">No projects found in this category.</p>
           </div>
         )}
+
+        {/* Link to Work Experience */}
+        <div className="text-center mt-12">
+          <Link
+            to="/about#experience"
+            className="inline-flex items-center gap-2 text-accent-primary hover:text-accent-secondary transition-colors font-semibold"
+          >
+            See past work experience
+            <span className="text-xl">→</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
