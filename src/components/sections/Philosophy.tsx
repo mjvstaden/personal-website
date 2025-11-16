@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface Value {
   icon: string;
@@ -73,7 +74,7 @@ export default function Philosophy() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           {values.map((value, index) => (
             <div
               key={value.title}
@@ -116,6 +117,16 @@ export default function Philosophy() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center">
+          <Link
+            to="/about"
+            className="inline-flex items-center gap-2 text-accent-primary hover:text-accent-secondary transition-colors font-semibold"
+          >
+            Learn more about me
+            <span className="text-xl">→</span>
+          </Link>
         </div>
       </div>
     </section>
