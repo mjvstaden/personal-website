@@ -65,7 +65,7 @@ export default function StatsCounter() {
   }, [isVisible]);
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 sm:px-6 bg-background-secondary/50">
+    <section id="stats-section" ref={sectionRef} className="py-20 px-4 sm:px-6 bg-background-secondary/50">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {stats.map((stat, index) => (
