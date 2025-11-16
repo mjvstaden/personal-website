@@ -10,7 +10,7 @@ export default function About() {
               I'm a full-stack software engineer from Cape Town who builds scalable web applications and microservices. I believe in clean architecture, purpose-driven development, and the power of hard work over talent.
             </p>
             <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
-              As a technical decision-maker, I turn business requirements into reliable solutions. Whether it's reducing infrastructure costs by 70%, scaling a platform from zero to six-figure revenue, or optimizing performance by 90%—I focus on measurable impact that matters.
+              As a technical decision-maker, I turn business requirements into reliable solutions. Whether it's reducing infrastructure costs by 60%, scaling a platform from zero to six-figure revenue, or optimizing performance by 90% — I focus on measurable impact that matters.
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function About() {
               </li>
               <li className="flex gap-2">
                 <span className="text-accent-tertiary mt-1">▹</span>
-                <span>Reduced Azure infrastructure costs by 70% through resource optimization</span>
+                <span>Reduced Azure infrastructure costs by 60% through resource optimization</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-accent-tertiary mt-1">▹</span>

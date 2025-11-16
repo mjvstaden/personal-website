@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { useConsoleMessage } from '../hooks/useConsoleMessage';
 import ParticleNetwork from '../components/effects/ParticleNetwork';
@@ -44,23 +45,23 @@ export default function Home() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center opacity-0 animate-[fadeIn_1s_ease-out_3s_forwards]">
-            <a
-              href="/projects"
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link
+              to="/projects"
               className="px-5 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-text-primary font-semibold rounded-lg hover:glow-md hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base"
             >
               View Projects
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="px-5 py-2.5 sm:px-6 sm:py-3 border border-accent-primary text-accent-primary font-semibold rounded-lg hover:bg-accent-primary hover:text-text-primary hover:glow-sm transition-all duration-300 text-sm sm:text-base"
             >
               Get in Touch
-            </a>
+            </Link>
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="mt-6 sm:mt-8 opacity-0 animate-[fadeIn_1s_ease-out_4s_forwards] flex justify-center">
+          <div className="mt-6 sm:mt-8 flex justify-center">
             <button
               onClick={() => {
                 document.getElementById('stats-section')?.scrollIntoView({ behavior: 'smooth' });
