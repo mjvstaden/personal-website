@@ -8,10 +8,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: 2, label: 'Years Experience', suffix: '+' },
-  { value: 10, label: 'Projects Completed', suffix: '+' },
+  { value: 8, label: 'Years Coding', suffix: '' },
+  { value: 2847, label: 'Coffees Consumed', suffix: '+' },
   { value: 4, label: 'Companies Worked With', suffix: '+' },
-  { value: 8, label: 'Technologies Mastered', suffix: '+' },
+  { value: 42, label: 'Rubber Ducks Consulted', suffix: '+' },
 ];
 
 export default function StatsCounter() {
