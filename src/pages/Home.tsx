@@ -10,7 +10,7 @@ import FinalCTA from '../components/sections/FinalCTA';
 
 export default function Home() {
   const { displayText, isComplete } = useTypewriter(
-    'A Full-stack software engineer from Cape Town',
+    'A full-stack software engineer from Cape Town',
     50,
     800
   );
