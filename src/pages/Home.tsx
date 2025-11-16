@@ -26,7 +26,7 @@ export default function Home() {
         <ParticleNetwork />
 
         {/* Animated background glow orbs */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center -mt-40 sm:-mt-32">
           <div className="w-[500px] h-[500px] bg-accent-primary/10 rounded-full blur-3xl animate-pulse" />
           <div className="absolute w-[300px] h-[300px] bg-accent-tertiary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>

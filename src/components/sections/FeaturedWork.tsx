@@ -13,7 +13,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'Personal Portfolio Website',
-    description: 'Modern portfolio showcasing skills with interactive particle effects, typewriter animations, and responsive design.',
+    description: 'Built to showcase my React and TypeScript skills with fully responsive design, user-friendly interface, and modern web best practices. Hosted on Vercel with Web3Forms integration for seamless contact form handling.',
     technologies: ['React', 'TypeScript', 'Tailwind', 'Vite'],
     link: 'https://mj-codes.com',
     github: 'https://github.com/mjvstaden/personal-website',
