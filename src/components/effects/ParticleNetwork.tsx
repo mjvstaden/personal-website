@@ -65,17 +65,33 @@ export default function ParticleNetwork() {
         if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
         if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
 
-        // Mouse interaction - magnetic effect (enhanced)
+        // Particle repulsion - prevent clustering
+        particles.forEach((otherParticle, j) => {
+          if (i === j) return;
+
+          const dx = particle.x - otherParticle.x;
+          const dy = particle.y - otherParticle.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const minDistance = 30; // Minimum distance between particles
+
+          if (distance < minDistance && distance > 0) {
+            const force = (minDistance - distance) / minDistance;
+            particle.x += (dx / distance) * force * 2;
+            particle.y += (dy / distance) * force * 2;
+          }
+        });
+
+        // Mouse interaction - magnetic effect (reduced strength)
         const dx = mouse.x - particle.x;
         const dy = mouse.y - particle.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        const maxDistance = 200; // Increased interaction range
+        const maxDistance = 200; // Interaction range
 
-        if (distance < maxDistance) {
+        if (distance < maxDistance && distance > 0) {
           const force = (maxDistance - distance) / maxDistance;
-          // Stronger attraction force
-          particle.x += (dx / distance) * force * 1.5;
-          particle.y += (dy / distance) * force * 1.5;
+          // Reduced attraction force to prevent sticking
+          particle.x += (dx / distance) * force * 0.8;
+          particle.y += (dy / distance) * force * 0.8;
         }
 
         // Draw particle with dynamic glow based on mouse proximity

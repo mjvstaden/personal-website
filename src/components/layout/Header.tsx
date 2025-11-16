@@ -17,7 +17,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="text-xl sm:text-2xl font-bold text-gradient hover:opacity-80 transition-opacity">
-            &lt;/mj-codes.com&gt;
+            &lt;/mj-codes&gt;
           </Link>
 
           {/* Mobile Menu Button */}
