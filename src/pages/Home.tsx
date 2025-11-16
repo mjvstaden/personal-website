@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-12rem)] sm:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Particle Network Background */}
         <ParticleNetwork />
 
