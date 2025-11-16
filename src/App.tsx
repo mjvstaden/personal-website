@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import ScrollProgress from './components/ui/ScrollProgress';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -10,6 +11,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col overflow-x-hidden">
+        <ScrollProgress />
         <Header />
         <main className="flex-1 w-full">
           <Routes>
