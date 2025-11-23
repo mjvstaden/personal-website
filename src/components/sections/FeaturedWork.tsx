@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: 'True North Wealth Analytics',
     description: 'Should I buy or rent? I asked myself this question constantly, but every calculator I found gave different answers. So I built my own. I distilled insights from my favorite finance gurus into a tool that gives me clarity on the 20-40 year impact of financial decisions. I built it because I use it.',
     technologies: ['React', 'TypeScript', 'Tailwind', 'Vite'],
-    link: 'https://wealth-tracker-olive.vercel.app/buy-vs-rent',
+    link: 'https://wealth-tracker-olive.vercel.app',
   },
   {
     title: 'Coming Soon',
