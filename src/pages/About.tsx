@@ -27,28 +27,28 @@ export default function About() {
               <p className="text-xs sm:text-sm md:text-base text-text-tertiary">Finstock • August 2024 - Present • Somerset West</p>
             </div>
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
-              {/* <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              {/* <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Developed web platform from R0 to R150K MRR</span>
               </li> */}
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Act as technical decision-maker, guiding architectural and development choices</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Designed and built microservices following CLEAN architecture principles with scalable database models for multi-tenant operations</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Achieved 40% reduction in cloud infrastructure costs through process optimization</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Built and maintained CI/CD pipelines</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Implemented logging, monitoring, and analytics systems improving system reliability</span>
               </li>
             </ul>
@@ -62,16 +62,16 @@ export default function About() {
               <p className="text-xs sm:text-sm md:text-base text-text-tertiary">Chipin (Part Time) • May 2025 - Present • Remote</p>
             </div>
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Analyze development requirements, provide technical estimates and architectural guidance</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Reduced Azure infrastructure costs by 60% through resource optimization</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Execute end-to-end development projects spanning backend APIs, frontend applications, and cloud infrastructure</span>
               </li>
             </ul>
@@ -85,20 +85,20 @@ export default function About() {
               <p className="text-xs sm:text-sm md:text-base text-text-tertiary">Estuary Solutions • July 2023 - August 2024 • Stellenbosch</p>
             </div>
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Developed and maintained trading systems using C# and .NET/.NET Core</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Worked with FIX protocol to facilitate trades on the Johannesburg Stock Exchange</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Successfully reduced application CPU usage by 90% through performance profiling</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Collaborated to build low latency and highly scalable code for trading systems</span>
               </li>
             </ul>
@@ -112,12 +112,12 @@ export default function About() {
               <p className="text-xs sm:text-sm md:text-base text-text-tertiary">VASTech • January 2023 - June 2023 • Stellenbosch</p>
             </div>
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Developed web-based network and dependency management tool using Vue.js, Node.js, and SQL</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent-tertiary mt-1">▹</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
                 <span>Gained operations experience with server deployment, maintenance, and monitoring</span>
               </li>
             </ul>

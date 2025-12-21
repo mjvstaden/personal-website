@@ -26,6 +26,7 @@ const projects: Project[] = [
     technologies: ['React', 'TypeScript', 'Tailwind', 'Vite'],
     category: 'Financial Tools',
     link: 'https://wealth-tracker-olive.vercel.app',
+    github: 'https://github.com/mjvstaden/wealth_tracker',
   },
   {
     title: 'Coming Soon',
@@ -54,7 +55,10 @@ export default function Projects() {
             My Projects
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl">
-            A collection of projects I've built, from web applications to system architecture solutions.
+            These personal projects showcase my frontend development skills. For backend and fullstack experience, check out my{' '}
+            <Link to="/about#experience" className="text-accent-primary hover:text-accent-secondary transition-colors">
+              work history
+            </Link>.
           </p>
         </div>
 
