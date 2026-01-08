@@ -27,13 +27,21 @@ export default function About() {
               <p className="text-xs sm:text-sm md:text-base text-text-tertiary">Finstock • August 2024 - Present • Somerset West</p>
             </div>
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
-              {/* <li className="flex items-start gap-2">
-                <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Developed web platform from R0 to R150K MRR</span>
-              </li> */}
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Act as technical decision-maker, guiding architectural and development choices</span>
+                <span>Designed and developed our web platform from scratch, growing it into a core tool used daily by users to manage and place orders within major South African retailers</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Acted as the technical decision-maker, guiding architectural and development choices</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Developed and scaled a full-stack web application using C#, .NET, ASP.NET, and modern frontend technologies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Translated business and user requirements into well-defined technical specifications and development roadmaps</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
@@ -41,15 +49,19 @@ export default function About() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Achieved 40% reduction in cloud infrastructure costs through process optimization</span>
+                <span>Achieved 50% reduction in cloud infrastructure costs through process optimisation and efficiency improvements that allowed for the adoption of lower-cost pricing models</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Built and maintained CI/CD pipelines</span>
+                <span>Built and maintained our CI/CD pipelines</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Implemented logging, monitoring, and analytics systems improving system reliability</span>
+                <span>Implemented logging, monitoring, and analytics systems improving system reliability and enabling data-driven product decisions</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Provided strategic technical input on product roadmap and feature prioritisation based on feasibility analysis and user feedback</span>
               </li>
             </ul>
           </div>
@@ -59,7 +71,8 @@ export default function About() {
             <div className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-accent-primary rounded-full -left-[7px] sm:-left-[9px] top-1"></div>
             <div className="mb-2">
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-accent-primary">Technical Consultant</h3>
-              <p className="text-xs sm:text-sm md:text-base text-text-tertiary">Chipin (Part Time) • May 2025 - Present • Remote</p>
+              <p className="text-xs sm:text-sm md:text-base text-text-tertiary">Chipin - Fintech (Part Time) • May 2025 - Present • Remote</p>
+              <p className="text-xs sm:text-sm text-text-tertiary mt-1">Group payment application</p>
             </div>
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
               <li className="flex items-start gap-2">
