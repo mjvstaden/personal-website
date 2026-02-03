@@ -148,7 +148,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full px-4 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-text-primary font-semibold rounded-lg hover:glow-md hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+                className="w-full px-4 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-background-primary font-semibold rounded-lg hover:glow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
               >
                 {status === 'loading' ? 'Sending...' : 'Send Message'}
               </button>

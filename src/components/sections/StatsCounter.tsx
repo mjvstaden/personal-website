@@ -8,8 +8,8 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: 8, label: 'Years Coding', suffix: '' },
-  { value: 2847, label: 'Coffees Consumed', suffix: '+' },
+  { value: 8, label: 'Years Coding' },
+  { value: 5694, label: 'Coffees Consumed', suffix: '+' },
   { value: 4, label: 'Companies Worked With', suffix: '+' },
   { value: 42, label: 'Rubber Ducks Consulted', suffix: '+' },
 ];

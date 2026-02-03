@@ -2,16 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-32 px-4 sm:px-6 overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/10 via-background-primary to-accent-tertiary/10 animate-pulse" />
-
-      {/* Background orbs */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-30">
-        <div className="w-[600px] h-[600px] bg-accent-primary/20 rounded-full blur-3xl" />
-        <div className="absolute w-[400px] h-[400px] bg-accent-tertiary/20 rounded-full blur-3xl" style={{ animationDelay: '1.5s' }} />
-      </div>
-
+    <section className="relative py-32 px-4 sm:px-6 overflow-hidden bg-background-secondary/30">
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
@@ -30,10 +21,7 @@ export default function FinalCTA() {
         {/* CTA Button */}
         <Link
           to="/contact"
-          className="inline-block px-8 py-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-text-primary font-bold text-lg rounded-lg hover:glow-md hover:-translate-y-1 transition-all duration-300 animate-pulse"
-          style={{
-            animationDuration: '3s',
-          }}
+          className="inline-block px-8 py-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-background-primary font-bold text-lg rounded-lg hover:glow-md transition-all duration-200"
         >
           Start a Conversation
         </Link>

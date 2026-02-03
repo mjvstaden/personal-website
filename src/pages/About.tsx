@@ -6,11 +6,11 @@ export default function About() {
         <div className="mb-12 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gradient">About Me</h1>
           <div className="bg-background-secondary border border-border-primary rounded-lg p-4 sm:p-6 md:p-8 max-w-4xl">
-            <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4">
-              I'm a full-stack software engineer from Cape Town who builds scalable web applications and microservices. I believe in clean architecture, purpose-driven development, and the power of hard work over talent.
+            <p className="text-base sm:text-lg text-text-secondary leading-loose">
+              I'm a software engineer from Cape Town who genuinely enjoys the puzzle of turning messy business problems into clean, working software.
             </p>
-            <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
-              As a technical decision-maker, I turn business requirements into reliable solutions. Whether it's reducing infrastructure costs by 60%, scaling a platform from zero to six-figure revenue, or optimizing performance by 90% — I focus on measurable impact that matters.
+            <p className="text-base sm:text-lg text-text-secondary leading-loose mt-4">
+              I've spent the last few years building everything from trading systems to e-commerce platforms — learning that good architecture and consistent effort go a long way.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function About() {
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Designed and developed our web platform from scratch, growing it into a core tool used daily by users to manage and place orders within major South African retailers</span>
+                <span>Developed our web platform from the ground up, growing it into a core tool used daily by users within major South African retailers</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
@@ -224,21 +224,17 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-text-primary">Beyond Code</h2>
           <div className="bg-background-secondary border border-border-primary rounded-lg p-4 sm:p-6 md:p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-              <div className="text-center">
-                <div className="text-3xl sm:text-4xl mb-2">🏔️</div>
-                <p className="text-sm sm:text-base text-text-secondary">Hiking & Camping</p>
+              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
+                <p className="text-sm sm:text-base text-text-primary font-medium">Hiking & Camping</p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl sm:text-4xl mb-2">💪</div>
-                <p className="text-sm sm:text-base text-text-secondary">Fitness</p>
+              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
+                <p className="text-sm sm:text-base text-text-primary font-medium">Fitness</p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl sm:text-4xl mb-2">📈</div>
-                <p className="text-sm sm:text-base text-text-secondary">Investing</p>
+              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
+                <p className="text-sm sm:text-base text-text-primary font-medium">Investing</p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl sm:text-4xl mb-2">🚵</div>
-                <p className="text-sm sm:text-base text-text-secondary">Mountain Biking</p>
+              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
+                <p className="text-sm sm:text-base text-text-primary font-medium">Mountain Biking</p>
               </div>
             </div>
           </div>

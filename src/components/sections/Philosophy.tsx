@@ -2,44 +2,34 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Value {
-  icon: string;
+  number: string;
   title: string;
   description: string;
-  color: 'primary' | 'secondary' | 'tertiary';
 }
 
 const values: Value[] = [
   {
-    icon: '💡',
+    number: '01',
     title: 'Imagination is the Blueprint',
     description: 'Anything we can imagine, we can build. The only real limits are the ones we place on ourselves.',
-    color: 'primary',
   },
   {
-    icon: '💪',
+    number: '02',
     title: 'Hard Work Beats Talent',
     description: 'Great software requires dedication and persistence. Consistent effort over quick wins.',
-    color: 'secondary',
   },
   {
-    icon: '🎯',
+    number: '03',
     title: 'Purpose-Driven Development',
     description: 'If it doesn\'t solve real problems or add genuine value, it\'s not worth building.',
-    color: 'tertiary',
   },
   {
-    icon: '🎨',
+    number: '04',
     title: 'User Experience Matters',
     description: 'Every detail counts - from performance to design to how intuitive it feels.',
-    color: 'primary',
   },
 ];
 
-const colorClasses = {
-  primary: 'border-accent-primary hover:border-accent-primary',
-  secondary: 'border-accent-secondary hover:border-accent-secondary',
-  tertiary: 'border-accent-tertiary hover:border-accent-tertiary',
-};
 
 export default function Philosophy() {
   const [isVisible, setIsVisible] = useState(false);
@@ -79,35 +69,20 @@ export default function Philosophy() {
             <div
               key={value.title}
               className={`
-                bg-background-secondary border rounded-lg p-6
-                hover:glow-sm transition-all duration-300
-                ${colorClasses[value.color]}
-                ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}
+                bg-background-secondary border border-border-primary rounded-lg p-6
+                hover:border-accent-primary hover:glow-sm transition-all duration-200
+                ${isVisible ? 'opacity-100' : 'opacity-0'}
               `}
               style={{
-                transitionDelay: `${index * 100}ms`,
+                transitionDelay: `${index * 75}ms`,
               }}
             >
               <div className="flex items-start gap-4">
-                <div
-                  className={`
-                    text-5xl animate-pulse
-                    ${isVisible ? 'animate-bounce' : ''}
-                  `}
-                  style={{
-                    animationDuration: '2s',
-                    animationDelay: `${index * 200}ms`,
-                    animationIterationCount: isVisible ? '1' : 'infinite',
-                  }}
-                >
-                  {value.icon}
+                <div className="text-2xl font-light text-accent-primary opacity-60">
+                  {value.number}
                 </div>
                 <div className="flex-1">
-                  <h3 className={`text-xl font-semibold mb-3 ${
-                    value.color === 'primary' ? 'text-accent-primary' :
-                    value.color === 'secondary' ? 'text-accent-secondary' :
-                    'text-accent-tertiary'
-                  }`}>
+                  <h3 className="text-xl font-semibold mb-3 text-text-primary">
                     {value.title}
                   </h3>
                   <p className="text-text-secondary leading-relaxed">

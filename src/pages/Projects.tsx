@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Project {
@@ -113,42 +113,14 @@ export default function Projects() {
 }
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return;
-
-    const card = cardRef.current;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / centerY) * -10;
-    const rotateY = ((x - centerX) / centerX) * 10;
-
-    setRotation({ x: rotateX, y: rotateY });
-  };
-
-  const handleMouseLeave = () => {
-    setRotation({ x: 0, y: 0 });
-  };
-
   return (
     <div
-      ref={cardRef}
-      className="relative group opacity-100 translate-y-0 transition-all duration-500"
+      className="relative group transition-all duration-200"
       style={{
-        transitionDelay: `${index * 100}ms`,
-        transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
+        transitionDelay: `${index * 75}ms`,
       }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
     >
-      <div className="glass rounded-lg p-4 sm:p-6 h-full border border-border-primary hover:border-accent-primary transition-all duration-300 hover:glow-sm flex flex-col">
+      <div className="glass rounded-lg p-4 sm:p-6 h-full border border-border-primary hover:border-accent-primary transition-all duration-200 hover:glow-sm flex flex-col">
         {project.comingSoon && (
           <div className="absolute top-4 right-4 px-3 py-1 bg-accent-primary/20 border border-accent-primary rounded-full text-xs text-accent-primary font-semibold">
             Coming Soon
