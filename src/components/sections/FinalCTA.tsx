@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-32 px-4 sm:px-6 overflow-hidden bg-background-secondary/30">
+    <section id="cta" className="relative py-32 px-4 sm:px-6 overflow-hidden bg-background-secondary/30">
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">

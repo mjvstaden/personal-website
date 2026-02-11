@@ -15,8 +15,8 @@ const values: Value[] = [
   },
   {
     number: '02',
-    title: 'Hard Work Beats Talent',
-    description: 'Great software requires dedication and persistence. Consistent effort over quick wins.',
+    title: 'Discipline Drives Results',
+    description: 'Consistent effort compounds into extraordinary outcomes. Show up daily, take action, and trust the process.',
   },
   {
     number: '03',
@@ -53,7 +53,7 @@ export default function Philosophy() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 sm:px-6 bg-background-secondary/30">
+    <section id="philosophy" ref={sectionRef} className="py-20 px-4 sm:px-6 bg-background-secondary/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">

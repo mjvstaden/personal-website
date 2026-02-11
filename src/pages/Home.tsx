@@ -6,6 +6,16 @@ import TechStack from '../components/sections/TechStack';
 import FeaturedWork from '../components/sections/FeaturedWork';
 import Philosophy from '../components/sections/Philosophy';
 import FinalCTA from '../components/sections/FinalCTA';
+import SectionNav from '../components/ui/SectionNav';
+
+const homeSections = [
+  { id: 'hero', label: 'Hello' },
+  { id: 'stats-section', label: 'By the Numbers' },
+  { id: 'tech-stack', label: 'Tech Stack' },
+  { id: 'featured-work', label: 'Featured Work' },
+  { id: 'philosophy', label: 'My Philosophy' },
+  { id: 'cta', label: 'Let\'s Connect' },
+];
 
 export default function Home() {
   const { displayText, isComplete } = useTypewriter(
@@ -19,8 +29,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <SectionNav sections={homeSections} />
+
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-12rem)] sm:min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-[calc(100vh-12rem)] sm:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Tech grid background */}
         <div className="absolute inset-0 tech-grid opacity-60" />
 

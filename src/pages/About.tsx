@@ -1,9 +1,21 @@
+import { GraduationCap, Award, Mountain, Dumbbell, TrendingUp, Bike } from 'lucide-react';
+import SectionNav from '../components/ui/SectionNav';
+
+const aboutSections = [
+  { id: 'about-intro', label: 'About Me' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'skills', label: 'Technical Skills' },
+  { id: 'education', label: 'Education' },
+  { id: 'beyond-code', label: 'Beyond Code' },
+];
+
 export default function About() {
   return (
     <div className="min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+      <SectionNav sections={aboutSections} />
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-12 sm:mb-16">
+        <div id="about-intro" className="mb-12 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gradient">About Me</h1>
           <div className="bg-background-secondary border border-border-primary rounded-lg p-4 sm:p-6 md:p-8 max-w-4xl">
             <p className="text-base sm:text-lg text-text-secondary leading-loose">
@@ -29,39 +41,51 @@ export default function About() {
             <ul className="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base text-text-secondary">
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Developed our web platform from the ground up, growing it into a core tool used daily by users within major South African retailers</span>
+                <span>Built the company's core web platform from the ground up as the sole developer, later scaling the team as the product and customer base grew</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Acted as the technical decision-maker, guiding architectural and development choices</span>
+                <span>Delivered a production system used daily by teams within major South African retailers</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Developed and scaled a full-stack web application using C#, .NET, ASP.NET, and modern frontend technologies</span>
+                <span>Led technical architecture and technology selection with a focus on long-term scalability</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Translated business and user requirements into well-defined technical specifications and development roadmaps</span>
+                <span>Developed a full-stack solution using C#, .NET, ASP.NET, and modern frontend technologies</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Designed and built microservices following CLEAN architecture principles with scalable database models for multi-tenant operations</span>
+                <span>Designed microservices using Clean Architecture and multi-tenant data models</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Achieved 50% reduction in cloud infrastructure costs through process optimisation and efficiency improvements that allowed for the adoption of lower-cost pricing models</span>
+                <span>Optimised cloud infrastructure and operational processes, reducing costs by ~50%</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Built and maintained our CI/CD pipelines</span>
+                <span>Enabled white-labeling to support expansion into the European market</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Implemented logging, monitoring, and analytics systems improving system reliability and enabling data-driven product decisions</span>
+                <span>Implemented CI/CD pipelines, automated testing, and deployment workflows</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-accent-tertiary leading-relaxed">▹</span>
-                <span>Provided strategic technical input on product roadmap and feature prioritisation based on feasibility analysis and user feedback</span>
+                <span>Established logging, monitoring, and analytics to improve reliability and observability</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Mentored junior developers through code reviews and architectural guidance</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Contributed strategic technical input to product and roadmap planning</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent-tertiary leading-relaxed">▹</span>
+                <span>Developing an LLM-powered natural language–to–SQL capability that allows customers to chat with their data</span>
               </li>
             </ul>
           </div>
@@ -138,7 +162,7 @@ export default function About() {
         </section>
 
         {/* Skills Grid */}
-        <section className="mb-12 sm:mb-16">
+        <section id="skills" className="mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-text-primary">Technical Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {/* Backend */}
@@ -208,34 +232,89 @@ export default function About() {
         </section>
 
         {/* Education */}
-        <section className="mb-12 sm:mb-16">
+        <section id="education" className="mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-text-primary">Education</h2>
           <div className="space-y-4 sm:space-y-6">
             <div className="bg-background-secondary border border-border-primary rounded-lg p-4 sm:p-6">
-              <h3 className="text-lg sm:text-xl font-semibold text-accent-primary mb-2">B.Sc in Computer Science</h3>
-              <p className="text-sm sm:text-base text-text-secondary mb-2">University of Stellenbosch • Stellenbosch, South Africa</p>
-              <p className="text-sm sm:text-base text-text-tertiary">Second major in Operations Research</p>
+              <div className="flex items-start gap-4">
+                <div className="hidden sm:flex w-12 h-12 items-center justify-center rounded-full bg-accent-primary/10 border border-accent-primary/30 flex-shrink-0 mt-1">
+                  <GraduationCap className="w-6 h-6 text-accent-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-accent-primary mb-2">B.Sc in Computer Science</h3>
+                  <p className="text-sm sm:text-base text-text-secondary mb-2">University of Stellenbosch • Stellenbosch, South Africa</p>
+                  <p className="text-sm sm:text-base text-text-tertiary">Second major in Operations Research</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-background-secondary border border-border-primary rounded-lg p-4 sm:p-6">
+              <div className="flex items-start gap-4">
+                <div className="hidden sm:flex w-12 h-12 items-center justify-center rounded-full bg-accent-primary/10 border border-accent-primary/30 flex-shrink-0 mt-1">
+                  <Award className="w-6 h-6 text-accent-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-accent-primary mb-2">National Senior Certificate</h3>
+                  <p className="text-sm sm:text-base text-text-secondary mb-2">Afrikaanse Hoer Seunskool • Pretoria, South Africa</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Interests */}
-        <section>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-text-primary">Beyond Code</h2>
-          <div className="bg-background-secondary border border-border-primary rounded-lg p-4 sm:p-6 md:p-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
-                <p className="text-sm sm:text-base text-text-primary font-medium">Hiking & Camping</p>
+        {/* Beyond Code */}
+        <section id="beyond-code" className="pb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-text-primary">Beyond Code</h2>
+          <p className="text-text-secondary mb-8 sm:mb-10 max-w-2xl">
+            The best software comes from well-rounded people. Here's what keeps me balanced and inspired outside of work.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-5 sm:gap-6">
+            <div className="group bg-background-secondary border border-border-primary rounded-lg p-6 sm:p-8 hover:border-accent-primary hover:glow-sm transition-all duration-200">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-accent-primary/10 border border-accent-primary/30 group-hover:bg-accent-primary/20 transition-colors">
+                  <Mountain className="w-5 h-5 text-accent-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-text-primary">Hiking & Camping</h3>
               </div>
-              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
-                <p className="text-sm sm:text-base text-text-primary font-medium">Fitness</p>
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
+                Nothing resets the mind like a trail through the mountains. I try to get out into nature as often as I can — it's where I do my clearest thinking.
+              </p>
+            </div>
+
+            <div className="group bg-background-secondary border border-border-primary rounded-lg p-6 sm:p-8 hover:border-accent-primary hover:glow-sm transition-all duration-200">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-accent-primary/10 border border-accent-primary/30 group-hover:bg-accent-primary/20 transition-colors">
+                  <Dumbbell className="w-5 h-5 text-accent-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-text-primary">Fitness</h3>
               </div>
-              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
-                <p className="text-sm sm:text-base text-text-primary font-medium">Investing</p>
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
+                Discipline in the gym translates to discipline everywhere else. Consistent effort, progressive overload — the same principles apply to code.
+              </p>
+            </div>
+
+            <div className="group bg-background-secondary border border-border-primary rounded-lg p-6 sm:p-8 hover:border-accent-primary hover:glow-sm transition-all duration-200">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-accent-primary/10 border border-accent-primary/30 group-hover:bg-accent-primary/20 transition-colors">
+                  <TrendingUp className="w-5 h-5 text-accent-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-text-primary">Investing</h3>
               </div>
-              <div className="text-center p-4 border border-border-primary rounded-lg hover:border-accent-primary transition-colors">
-                <p className="text-sm sm:text-base text-text-primary font-medium">Mountain Biking</p>
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
+                I'm fascinated by compound growth and long-term thinking. Understanding markets helps me think about value, risk, and building things that last.
+              </p>
+            </div>
+
+            <div className="group bg-background-secondary border border-border-primary rounded-lg p-6 sm:p-8 hover:border-accent-primary hover:glow-sm transition-all duration-200">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-accent-primary/10 border border-accent-primary/30 group-hover:bg-accent-primary/20 transition-colors">
+                  <Bike className="w-5 h-5 text-accent-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-text-primary">Mountain Biking</h3>
               </div>
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
+                Cape Town's trails are world-class. There's something about committing to a line down a mountain that keeps things in perspective.
+              </p>
             </div>
           </div>
         </section>
