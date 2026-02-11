@@ -47,7 +47,7 @@ export default function Projects() {
     : projects.filter(p => p.category === selectedCategory);
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+    <div className="min-h-screen py-12 sm:py-16 md:py-20 px-8 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12 sm:mb-16">

@@ -58,7 +58,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen py-12 sm:py-20 px-4 sm:px-6">
+    <div className="min-h-screen py-12 sm:py-20 px-8 sm:px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">

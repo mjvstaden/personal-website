@@ -11,7 +11,7 @@ const aboutSections = [
 
 export default function About() {
   return (
-    <div className="min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+    <div className="min-h-screen py-12 sm:py-16 md:py-20 px-8 sm:px-6">
       <SectionNav sections={aboutSections} />
       <div className="max-w-5xl mx-auto">
         {/* Header */}

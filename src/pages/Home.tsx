@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useTypewriter } from '../hooks/useTypewriter';
-import { useConsoleMessage } from '../hooks/useConsoleMessage';
 import StatsCounter from '../components/sections/StatsCounter';
 import TechStack from '../components/sections/TechStack';
 import FeaturedWork from '../components/sections/FeaturedWork';
@@ -24,15 +23,12 @@ export default function Home() {
     800
   );
 
-  // Display console message easter egg
-  useConsoleMessage();
-
   return (
     <div className="min-h-screen">
       <SectionNav sections={homeSections} />
 
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-[calc(100vh-12rem)] sm:min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Tech grid background */}
         <div className="absolute inset-0 tech-grid opacity-60" />
 
@@ -43,7 +39,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-4 sm:px-6 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards] -mt-32 sm:-mt-24">
+        <div className="relative z-10 text-center px-8 sm:px-6 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards] -mt-20 sm:-mt-24">
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6">
             Hello, I'm <span className="text-gradient">MJ</span>
           </h1>
@@ -56,7 +52,7 @@ export default function Home() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <Link
               to="/projects"
               className="px-5 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-background-primary font-semibold rounded-lg hover:glow-md transition-all duration-200 text-sm sm:text-base"
